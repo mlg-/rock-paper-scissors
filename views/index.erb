@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="small-8 small-offset-2 columns">
+    <% if message != nil %>
+      <div data-alert class="alert-box">
+        <%= message %>
+        <a href="#" class="close">&times;</a>
+      </div>
+    <% end %>
+
+    <form action="/" method="post">
+      <select name="player_shape">
+        <option value="r">Rock</option>
+        <option value="p">Paper</option>
+        <option value="s">Scissors</option>
+      </select>
+      <input type="submit" value="submit"/>
+    </form>
+
+    <p>
+      <ul>
+        <li>Computer Score: <%= computer_score %></li>
+        <li>Your Score: <%= player_score %></li>
+      </ul>
+    </p>
+
+  </div><!-- close column-->
+</div><!-- close row -->
