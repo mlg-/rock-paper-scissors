@@ -14,13 +14,8 @@ def initialize_scores
 end
 
 def computer_choice
-  shapes = {
-    "r" => "rock",
-    "p" => "paper",
-    "s" => "scissors"
-    }
-  computer_shape = shapes.keys.sample
-  computer_shape
+  shapes = ["r", "p", "s"]
+  shapes.sample
 end
 
 def round_winner(player, computer)
